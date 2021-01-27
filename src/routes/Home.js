@@ -63,8 +63,8 @@ export default () => {
   return (
     <Container>
       <Header>
-        <Title>Apollo 2021</Title>
-        <Subtitle>I love GraphQL</Subtitle>
+        <Title>Dylan's Movie with Apollo 2021</Title>
+        <Subtitle>I love React with GraphQL</Subtitle>
       </Header>
       {loading && <Loading>Loading...</Loading>}
       <Movies>
