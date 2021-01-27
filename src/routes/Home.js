@@ -6,7 +6,7 @@ import Movie from "../components/Movie";
 
 const GET_MOVIES = gql`
   {
-    movies {
+    movies(limit: 20, rating: 8.5) {
       id
       medium_cover_image
       isLiked @client
@@ -53,7 +53,7 @@ const Movies = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 25px;
-  width: 60%;
+  width: 80%;
   position: relative;
   top: -50px;
 `;
@@ -63,7 +63,7 @@ export default () => {
   return (
     <Container>
       <Header>
-        <Title>Apollo 2020</Title>
+        <Title>Apollo 2021</Title>
         <Subtitle>I love GraphQL</Subtitle>
       </Header>
       {loading && <Loading>Loading...</Loading>}
